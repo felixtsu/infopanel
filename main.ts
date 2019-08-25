@@ -6,11 +6,10 @@
 namespace cubicbird {
 
     //%block
-    export function showNumber(no : number) {
-        let _bkg:Image = scene.backgroundImage()
-        _bkg.fillRect(0, 120 - (image.font8.charHeight + 2), image.font8.charWidth + 2 + 10, image.font8.charHeight + 2, 3)
-        _bkg.fillRect(0, 120 - (image.font8.charHeight + 1), image.font8.charWidth + 1 + 10, image.font8.charHeight + 1, 10)
-        _bkg.print(no.toString(), 0, 120 - (image.font8.charHeight + 1))
+    export function showNumber(no: number) {
+        screen.fillRect(0, 120 - (image.font8.charHeight + 2), image.font8.charWidth + 2 + 10, image.font8.charHeight + 2, 3)
+        screen.fillRect(0, 120 - (image.font8.charHeight + 1), image.font8.charWidth + 1 + 10, image.font8.charHeight + 1, 10)
+        screen.print(no.toString(), 0, 120 - (image.font8.charHeight + 1))
     }
 
 } 
